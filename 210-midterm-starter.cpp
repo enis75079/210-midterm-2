@@ -19,10 +19,11 @@ private:
         }
     };
 
-    Node* head;
-    Node* tail;
+
 
 public:
+    Node* head;
+    Node* tail;
     DoublyLinkedList() { head = nullptr; tail = nullptr; }
 
     void insert_after(string value, int position) {
@@ -223,6 +224,7 @@ int main() {
     }
     
     DoublyLinkedList list;
+
     cout << "Store opens: " << endl;
     for (int i = 0; i < 5; i++) {
         int randName = rand() % count;
@@ -239,7 +241,7 @@ int main() {
 
         int prob = rand() % 100 + 1;
         if (prob <= 40) {
-            string firstName = head->data;
+            cout << list.head->data << " is served" << endl;
 
         }
     }
