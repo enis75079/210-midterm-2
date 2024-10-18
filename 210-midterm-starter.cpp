@@ -234,6 +234,8 @@ int main() {
     cout << "   ";
     list.print();
 
-    for (int i = 0; i < )
+    for (int i = 0; i < 20; i++) {
+        cout << "Time step #" << i << endl;
+    }
     return 0;
 }
