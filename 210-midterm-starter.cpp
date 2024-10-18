@@ -245,13 +245,13 @@ int main() {
             list.pop_front();
         }
 
-        int prob = rand() % 100 + 1;
-        if (prob <= 60) {
+        int prob2 = rand() % 100 + 1;
+        if (prob2 <= 60) {
             int randName = rand() % names.size();
             cout << names[randName] << " joins the line";
             list.push_back(names[randName]);
         }
-        list.print()
+        list.print();
     }
     return 0;
 }
