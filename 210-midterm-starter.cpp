@@ -249,7 +249,9 @@ int main() {
         if (prob <= 60) {
             int randName = rand() % names.size();
             cout << names[randName] << " joins the line";
+            list.push_back(names[randName]);
         }
+        list.print()
     }
     return 0;
 }
