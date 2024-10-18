@@ -235,7 +235,13 @@ int main() {
     list.print();
 
     for (int i = 0; i < 20; i++) {
-        cout << "Time step #" << i << endl;
+        cout << "Time step #" << i + 1 << endl;
+
+        int prob = rand() % 100 + 1;
+        if (prob <= 40) {
+            string firstName = head->data;
+
+        }
     }
     return 0;
 }
