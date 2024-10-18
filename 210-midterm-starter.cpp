@@ -242,7 +242,13 @@ int main() {
         int prob = rand() % 100 + 1;
         if (prob <= 40) {
             cout << list.head->data << " is served" << endl;
+            list.pop_front();
+        }
 
+        int prob = rand() % 100 + 1;
+        if (prob <= 60) {
+            int randName = rand() % names.size();
+            cout << names[randName] << " joins the line";
         }
     }
     return 0;
