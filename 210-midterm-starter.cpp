@@ -210,8 +210,11 @@ int main() {
     cout << MIN_NR + MIN_LS + MAX_NR + MAX_LS;  // dummy statement to avoid compiler warning
 
     vector<string> names;
-    ifstream file(names.txt);
-
+    ifstream file("/Users/Naveen Islam/projects/210-midterm-2/names.txt");
+    string name;
+    while (getline(file, name)) {
+        names.push_back(name);
+    }
 
     
     return 0;
