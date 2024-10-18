@@ -242,26 +242,26 @@ int main() {
         cout << "Time step #" << i + 1 << endl;
 
         int prob = rand() % 100 + 1;
-        if (rand() % 100 < 40) {
+        if (prob <= 40) {
             cout << list.head->data << " is served" << endl;
             list.pop_front();
         }
 
         int prob2 = rand() % 100 + 1;
-        if (rand() % 100 < 60) {
+        if (prob2 <= 60) {
             int randName = rand() % names.size();
             cout << names[randName] << " joins the line" << endl;
             list.push_back(names[randName]);
         }
 
         int prob3 = rand() % 100 + 1;
-        if (rand() % 100 < 20) {
+        if (prob3 <= 20) {
             cout << list.tail->data << " (at the rear) left the line" << endl;
             list.pop_back();
         }
 
         int prob4 = rand() % 100 + 1;
-        if (rand() % 100 < 10) {
+        if (prob4 <= 10) {
             int randName = rand() % names.size();
             cout << names[randName] << " (VIP) joins the front of the line" << endl;
             list.push_front(names[randName]);
