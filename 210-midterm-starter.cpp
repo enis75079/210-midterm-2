@@ -252,6 +252,12 @@ int main() {
             list.push_back(names[randName]);
         }
         list.print();
+
+        int prob3 = rand() % 100 + 1;
+        if (prob3 <= 20) {
+            cout << list.tail->data << " (at the rear) left the line";
+            list.pop_back();
+        }
     }
     return 0;
 }
