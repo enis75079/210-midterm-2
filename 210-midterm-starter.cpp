@@ -217,15 +217,21 @@ int main() {
     }
 
     // delete later. tests name reading
-    int count = 0
+    int count = 0;
     for (const auto& x : names) {
         count += 1;
         cout << x << endl;
     }
     
+    DoublyLinkedList list;
     cout << "Store opens: " << endl;
     for (int i = 0; i < 5; i++) {
-        int randName = rand() % names
+        int randName = rand() % count;
+        cout << "   " << names[randName] << " joins the line" << endl;
+        list.push_back(names[randName]);
     }
+    
+    cout << "   " << "Resulting line:" << endl;
+    list.print();
     return 0;
 }
