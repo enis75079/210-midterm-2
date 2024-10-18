@@ -220,7 +220,6 @@ int main() {
     int count = 0;
     for (const auto& x : names) {
         count += 1;
-        cout << x << endl;
     }
     
     DoublyLinkedList list;
@@ -232,6 +231,9 @@ int main() {
     }
     
     cout << "   " << "Resulting line:" << endl;
+    cout << "   ";
     list.print();
+
+    for (int i = 0; i < )
     return 0;
 }
