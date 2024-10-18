@@ -251,13 +251,21 @@ int main() {
             cout << names[randName] << " joins the line";
             list.push_back(names[randName]);
         }
-        list.print();
 
         int prob3 = rand() % 100 + 1;
         if (prob3 <= 20) {
             cout << list.tail->data << " (at the rear) left the line";
             list.pop_back();
         }
+
+        int prob4 = rand() % 100 + 1;
+        if (prob4 <= 10) {
+            int randName = rand() % names.size();
+            cout << names[randName] << " (VIP) joins the front of the line";
+            list.push_front(names[randName]);
+        }
+
+        list.print();
     }
     return 0;
 }
