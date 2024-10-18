@@ -208,6 +208,7 @@ public:
 };
 
 int main() {    
+    srand(time(0));
     cout << MIN_NR + MIN_LS + MAX_NR + MAX_LS;  // dummy statement to avoid compiler warning
 
     vector<string> names;
@@ -254,14 +255,14 @@ int main() {
 
         int prob3 = rand() % 100 + 1;
         if (prob3 <= 20) {
-            cout << list.tail->data << " (at the rear) left the line";
+            cout << list.tail->data << " (at the rear) left the line" << endl;
             list.pop_back();
         }
 
         int prob4 = rand() % 100 + 1;
         if (prob4 <= 10) {
             int randName = rand() % names.size();
-            cout << names[randName] << " (VIP) joins the front of the line";
+            cout << names[randName] << " (VIP) joins the front of the line" << endl;
             list.push_front(names[randName]);
         }
 
