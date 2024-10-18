@@ -215,9 +215,17 @@ int main() {
     while (getline(file, name)) {
         names.push_back(name);
     }
+
+    // delete later. tests name reading
+    int count = 0
     for (const auto& x : names) {
+        count += 1;
         cout << x << endl;
     }
     
+    cout << "Store opens: " << endl;
+    for (int i = 0; i < 5; i++) {
+        int randName = rand() % names
+    }
     return 0;
 }
